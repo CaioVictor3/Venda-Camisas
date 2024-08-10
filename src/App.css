@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  background-color: #60aac7;
+}
+
+main > section.items h4 {
+  text-align: center;
+  margin-top: 0;
+  width: 100%;
+  font-size: 32px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  width: 100%;
+}
+
+main > section.items {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid lightgrey;
+  background-color: #fff;
+  border-radius: 20px 0 20px 20px;
+  padding: 20px;
+  max-width: 800px;
+  min-width: 300px;
+  justify-content: center;
+  
+}
+
+section.items .product {
+  padding-top: 12px;
+  border: 1px solid lightgrey;
+  margin: 12px;
+  flex: 0 0 calc(33.333% - 36px);
+  cursor: pointer;
+  text-align: center;
+  border-radius: 20px 20px 0 0 ;
+}
+
+section.items .product.selected {
+  border: 3px solid rgb(220, 75, 39);
+
+}
+
+section.items .photo img {
+  max-width: 140px;
+}
+
+section.items .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  line-height: 15px;
+}
+
+section.items  .description .price {
+  font-weight: bold;
+  margin: 4px auto;
+}
+
+section.items  .description .quantity-area {
+  padding: 12px;
+  margin-top: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 18px;
+}
+
+section.items  .description .quantity-area button {
+  width: 26px;
+  height: 26px;
+  margin: 0 6px;
+  display: inline-flex;
+  justify-content: center;
+  vertical-align: baseline;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: 22px;
+  background-color: rgb(223, 223, 223);
+}
+
+section.items  .description .quantity-area .quantity {
+  font-weight: bold;
+  margin: 0 4px;
+}
+
+section.items  .description .quantity-area button:focus {
+  outline:0;
+}
+
+
+section.summary {
+  background-color: rgb(245, 245, 245);
+  padding: 30px;
+  min-height: 200px;
+  min-width: 200px;
+  text-align: center;
+}
+
+section.summary strong {
+  font-size: 14px;
+}
+
+section.summary table {
+  width: 100%;
+  padding-top: 12px;
+  font-size: 16px;
+  margin: auto;
+}
+
+section.summary table tbody tr:last-of-type th {
+  border-top: 1px solid black;
+  padding: 10px 0;
+}
+
+
+
